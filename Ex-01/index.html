@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkpoint 05 - Ex-01</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 class="display-6 my-5 py-3 px-2 bg-primary text-light rounded">Motos Elétricas</h1>
+        <div class="table-responsive">
+            <table class="table text-center" id="dados">
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Preço <br>(R$)</th>
+                        <th>Tempo/Carregamento <br>(Horas)</th>
+                        <th>Autonomia<br> (KM)</th>
+                        <th>Km rodados <br> (Mês)</th>
+                        <th>Gasto Mês<br>(R$)</th>
+                    </tr>
+                </thead>
+                <tbody id="motos">
+
+                    <tr class="moto">
+                        <td class="modelo">Voltz EVS</td>
+                        <td class="preco">24990</td>
+                        <td class="tempo">5</td>
+                        <td class="autonomia">120</td>
+                        <td class="kilometragem">2400</td>
+                        <td class="gasto"></td>
+                    </tr>
+
+                    <tr class="moto">
+                        <td class="modelo">Shineray SE1S</td>
+                        <td class="preco">17990</td>
+                        <td class="tempo">9</td>
+                        <td class="autonomia">80</td>
+                        <td class="kilometragem">1200</td>
+                        <td class="gasto"></td>
+                    </tr>
+
+                    <tr class="moto">
+                        <td class="modelo">Muuv Custom L</td>
+                        <td class="preco">18498</td>
+                        <td class="tempo">8</td>
+                        <td class="autonomia">40</td>
+                        <td class="kilometragem">760</td>
+                        <td class="gasto"></td>
+                    </tr>
+
+                    <tr class="moto">
+                        <td class="modelo">Voltz EVS-R</td>
+                        <td class="preco">23990</td>
+                        <td class="tempo">7</td>
+                        <td class="autonomia">150</td>
+                        <td class="kilometragem">1650</td>
+                        <td class="gasto"></td>
+                    </tr>
+
+                    <tr class="moto">
+                        <td class="modelo">Energie Mobi</td>
+                        <td class="preco">25000</td>
+                        <td class="tempo">5</td>
+                        <td class="autonomia">50</td>
+                        <td class="kilometragem">950</td>
+                        <td class="gasto"></td>
+                    </tr>
+
+                    <tr class="moto">
+                        <td class="modelo">GWS K4000RP</td>
+                        <td class="preco">30300</td>
+                        <td class="tempo">9</td>
+                        <td class="autonomia">70</td>
+                        <td class="kilometragem">1400</td>
+                        <td class="gasto"></td>
+                    </tr>
+
+                    <tr class="moto">
+                        <td class="modelo">EV1 Sport</td>
+                        <td class="preco">19990</td>
+                        <td class="tempo">9</td>
+                        <td class="autonomia">90</td>
+                        <td class="kilometragem">1350</td>
+                        <td class="gasto"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="d-flex justify-content-end my-4">
+            <button class="btn btn-primary" id="gerarDados">Gerar Dados</button>
+        </div>
+
+        <h4 class="py-3 px-2 bg-primary text-light rounded">Resultados obtidos</h4>
+        <div class="table-responsive">
+            <table class="table text-center" id="resultados">
+                <thead>
+                    <tr>
+                        <th>Modelo com maior gasto mensal</th>
+                        <th>Modelo com menor gasto mensal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="resultados">
+                        <td class="maiorGasto display-6"></td>
+                        <td class="menorGasto display-6"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./js/gastoMensal.js"></script>
+</body>
+
+</html>

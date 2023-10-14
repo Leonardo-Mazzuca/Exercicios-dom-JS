@@ -1,0 +1,87 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(155,58,180);
+    background: linear-gradient(90deg, rgba(155,58,180,1) 0%, rgba(54,13,52,1) 0%, rgba(141,69,252,1) 100%);
+    height: 100vh;
+}
+
+header{
+    margin-top: 1rem;
+    color: #fff;
+    font-weight: 300;
+    width: 100%;
+    display: flex;
+}
+
+h1{
+    margin: 0 auto;
+}
+
+main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 4rem 9%;
+    width: 100%;
+}
+
+.game__container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+main .jogador {
+    min-height: 50vh;
+}
+
+.jogador{
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: inherit;
+    
+
+}
+
+.dados-lancados{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dado-numero{
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: rgb(58,65,180);
+    background: linear-gradient(90deg, rgba(58,65,180,1) 0%, rgba(58,109,180,1) 0%, rgba(69,96,252,1) 100%);
+    text-align: center;
+    padding: 1rem;
+}
+
+.vencedor__container{
+    align-self: center;
+    height: 40vh;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
