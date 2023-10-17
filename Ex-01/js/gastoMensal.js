@@ -2,19 +2,23 @@
 
 const calculaGastoMensal = () => {
     const gastoMesHTML = document.querySelectorAll('.gasto');
+    const motos = document.querySelectorAll(".moto");
     const gastoMes = descobreGastoMensal();
     const maiorPrecoIndex = descobreMaiorPreco(gastoMes);
-    const menorPrecoIndex = descobreMenorPreco(gastoMes);
 
 
     for(let i = 0; i < gastoMesHTML.length; i++){
         gastoMesHTML[i].textContent = Number(gastoMes[i]);
+        motos[maiorPrecoIndex].classList.add('bg-danger');
     }
 
-    gastoMesHTML[maiorPrecoIndex].classList.add('bg-danger');
-    descobreModelos(gastoMes);
+    const motoTd = motos[maiorPrecoIndex].querySelectorAll('td');
+    motoTd.forEach(td => {
+        td.classList.add('bg-danger');
+    })
 
-    
+
+    descobreModelos(gastoMes);
 
 
 }
